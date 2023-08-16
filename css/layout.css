@@ -1,0 +1,228 @@
+@charset "utf-8";
+
+/* 레이아웃 서식 header, main, footer 공통서식 */
+
+/* html {
+  scroll-behavior: smooth;
+} */
+
+/* 모달서식 */
+.modal{
+  width:100%;height:100%;
+  position:fixed;left:0px;top:0px;
+  background:rgba(0,0,0,.8);
+  z-index: 601;
+}
+.modal label:hover {cursor: url(../images/m_daisy_c.png)21 21, pointer;}
+.modal input:hover {cursor: url(../images/m_daisy_c.png)21 21, pointer;}
+.inner{
+  width:480px;height:519px;
+  position:absolute;
+  left:50%;top:50%;
+  transform:translate(-50%, -50%);
+}
+.inner img{
+  width: 100%;
+  display:block;}
+.inner p{
+  background:#0C1A4B;
+  line-height:44px;
+  font-size:14px;
+  padding:0px 5px;
+  color: #fff;
+}
+.inner #ch {
+  line-height: 44px;
+}
+.inner #c_btn{
+  border:none;
+  padding:4px 8px;
+  background:#E0EDFF;
+  position:absolute;right:10px;bottom:5px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* 헤더서식 */
+header{
+  width: 100%;height: 80px;
+  position: fixed;top: 0;left: 0;
+  z-index: 500;
+}
+/* 세로스크롤값이 1100px이상일 경우 header배경식 적용 */
+.act {
+  background: rgba(224, 237, 255, 0.9) !important;
+}
+header > h1 {
+  padding: 15px 25px 0px 10px;
+}
+header > h1 img {
+  width: 170px;
+}
+header nav {
+  width: 650px;
+  margin: -46px auto 0 auto;
+}
+header .gnb {
+  display: flex;
+  justify-content: space-around;
+}
+header .gnb > li > a {
+  font-size: 1.2rem;
+  color: var(--t-color02);
+  font-family: var(--f-font01);
+  font-size: 22px;
+}
+header .gnb > li > a:hover {
+  color: #ff4479 !important;
+}
+
+header .lnb {
+  position: absolute;
+  top: 35px;
+  font-size: 1.6rem;
+  color: var(--t-color02);
+  display: flex;
+  right: 2%;gap: 25px;
+}
+header .lnb i.fas {color: #fff;}
+header .lnb a:hover i.fas {
+  color: #ff4479 !important;
+}
+
+/* 원형내비게이션 서식 */
+#m_nav{
+  position: fixed;
+  right: 30px;top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  width: 200px;height: 160px;
+}
+#m_nav ul {position: relative;}
+#m_nav > ul > li {
+  width: 40px;height: 40px;
+  border: 1.5px solid #fff;
+  border-radius: 40px;
+  line-height: 40px;
+  background: rgba(0,0,0,.4);
+  position: absolute;right: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  cursor: url(../images/m_daisy_c.png)21 21, pointer;
+}
+#m_nav > ul > li:hover {width: 200px;}
+#m_nav > ul > li:first-child {}
+#m_nav > ul > li:nth-child(2) {top: 50px;}
+#m_nav > ul > li:nth-child(3) {top: 100px;}
+#m_nav > ul > li:nth-child(4) {top: 150px;}
+#m_nav > ul > li:last-child {top: 200px;}
+
+#m_nav > ul > li span {
+  display: inline-block;
+  width: 40px;height: 40px;
+  border-radius: 50%;
+  /* background: #A98AFF; */
+  /* background: #6dafeb; */
+  /* background: #E0EDFF; */
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+}
+#m_nav > ul > li span img {
+  width: 30px;
+  text-align: center;
+  vertical-align: middle;
+  transform: translateY(-5%);
+}
+#m_nav > ul > li:nth-child(2) span img {
+  width: 28px;
+  transform: translateY(-7%);
+}
+#m_nav > ul > li:nth-child(3) span img {
+  width: 34px;
+  transform: translateY(-14%);
+}
+#m_nav > ul > li:nth-child(4) span img {
+  width: 28px;
+  transform: translateY(-8%);
+}
+#m_nav > ul > li:last-child span img {
+  width: 34px;
+}
+#m_nav > ul > li:hover span {
+  background: rgb(6, 75, 153);
+}
+#m_nav > ul > li a{
+  font-size: 16px;
+  color: #fff;
+  padding-left: 40px;
+  font-family: var(--f-font01);
+}
+
+/* 메인 내비게이션 서식 */
+#m_nav{
+
+}
+
+/* 푸터서식 */
+footer{
+  background: #212534;
+  width: 100%;
+  padding: 20px 0;
+}
+/* float속성 해지시켜주는 속성 -> 부모에게 적용시켜줘야 함 */
+footer::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+.f_inner{
+  width: 1200px;
+  margin: 0 auto;
+}
+footer h2 {
+  float: left;
+  padding-top: 30px;
+  margin-right: 32px;
+  width: 130px;height: 40px;
+}
+footer h2 img {
+  width: 130px;
+}
+.f_lnb, address{
+  width: 1100px;float: left;
+}
+.f_lnb ul {
+  display: flex;
+  padding-top: 15px;
+}
+.f_lnb ul a {
+  color: #fff;
+  padding-right: 30px;
+}
+.f_lnb ul li:last-child a {
+  color: #5CD7FE;
+  font-weight: 500;
+}
+.f_lnb ul li:last-child a {border: none;}
+
+footer address {
+  padding-top: 20px;
+  line-height: 30px;
+  color: #ccc;
+  font-size: 15px;
+}
+footer address dl {}
+footer address dt {display: inline-block;}
+footer address dd {display: inline-block;}
+footer address dd:after {
+  content: "";
+  width: 1px;height: 18px;
+  background: #ccc;
+  display: inline-block;
+  margin: 0 5px 0 7px;
+  transform: translateY(3px);
+}
+footer address dd:last-child:after {display: none;} 

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>디즈니 홈페이지</title>
+
+  <!-- 파비콘 적용 -->
+  <link rel="shortcut icon" href="./images/D_favicon.png">
+  <!-- 초기화 -->
+  <link rel="stylesheet" href="./css/reset.css" type="text/css">
+
+  <!-- 기본, 공통서식 -->
+  <link rel="stylesheet" href="./css/base.css" type="text/css">
+
+  <!-- 레이아웃서식 -->
+  <link rel="stylesheet" href="./css/layout.css" type="text/css">
+
+  <!-- 콘텐츠 내용 서식 -->
+  <link rel="stylesheet" href="./css/main.css" type="text/css">
+  
+  <!-- 스와이퍼 슬라이드 서식 -->
+  <link rel="stylesheet" href="./css/swiper.css" type="text/css">
+
+  <!-- 아이콘폰트 주소 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- css3속성 사용시 접두사 자동으로 붙여주는 스크립트 소스 -->
+  <script src="./script/prefixfree.min.js"></script>
+
+  <!-- 제이쿼리 라이브러리 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+  <!-- 제이쿼리 ui라이브러리 -->
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+  <!-- 제이쿼리 쿠키파일 -->
+  <script src="./script/jquery.cookie.js"></script>
+
+  <!-- 제이쿼리 공통 스크립트 -->
+  <script src="./script/layout.js"></script>
+
+    <!-- 제이쿼리 메인 스크립트 -->
+    <script src="./script/main.js"></script>
+
+</head>
+<body>
+  <!-- 헤더영역 시작 -->
+  <header>
+    <h1>
+      <a href="index.html" title="메인페이지로 바로가기">
+        <img src="./images/disney_logo_cw.png" alt="상단로고">
+      </a>
+    </h1>
+
+    <!-- 상단 내비게이션 -->
+    <nav>
+      <ul class="gnb">
+        <li><a href="#about" title="Disney">Disney</a></li>
+        <li><a href="#intro" title="character">Character</a></li>
+        <li><a href="#movie" title="Movie">Movie</a></li>
+        <li><a href="#event" title="Event">Event</a></li>
+        <li><a href="#review" title="Review">Review</a></li>
+      </ul>
+    </nav>
+    
+    <div class="lnb">
+      <a href="#" title=""> <!--로그인 아이콘-->
+        <i class="fas fa-user"></i>
+      </a> 
+      <a href="#" title=""> <!--알람 아이콘-->
+        <i class="fas fa-bell"></i>
+      </a> 
+    </div>
+    
+
+  </header>
+
+  <!-- 원형 내비게이션 -->
+  <nav id="m_nav">
+    <ul>
+      <li>
+        <span><img src="./images/m_nav01.png" alt=""></span>
+        <a href="#" title="Disney">Disney</a>
+      </li>
+      <li>
+        <span><img src="./images/m_nav02.png" alt=""></span>
+        <a href="#" title="Character">Character</a>
+      </li>
+      <li>
+        <span><img src="./images/m_nav03.png" alt=""></span>
+        <a href="#" title="Movie">Movie</a>
+      </li>
+      <li>
+        <span><img src="./images/m_nav04.png" alt=""></span>
+        <a href="#" title="Event">Event</a>
+      </li>
+      <li>
+        <span><img src="./images/m_nav05.png" alt=""></span>
+        <a href="#" title="Review">Review</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- 메인영역 시작 -->
+  <main>
+    <!-- 디즈니 인트로 영상 -->
+    <section id="main_intro">
+      <h2>디즈니 인트로 영상콘텐츠</h2>
+      <article>
+        <h3> Disney</h3>
+        <p>감동과 웃음을 동시에 주는 최고의 영화 디즈니를 즐겨보세요.</p>
+      </article>
+      <video autoplay muted loop="infinite"> <!-- video태그에 이 세가지 꼭 써줘야함!! -->
+        <source src="./images/Disney_Opening.webm" type="video/webm">
+      </video>
+
+      <a href="#" title="아래로 이동" class="next_btn">
+        <img src="./images/scroll_btn.png" alt="">
+        click!
+        <p>&laquo;</p>
+      </a>
+    </section>
+
+    <!-- 1. 디즈니 소개 -->
+    <section id="about">
+      <article>
+        <h2>디즈니 소개</h2>
+      </article>
+    </section>
+
+    <!-- 2. 디즈니 인물소개 -->
+    <section id="intro">
+      <article class="intro_wrap">
+        <h2>DISNEY CHARACTER</h2>
+        <div class="char_btn">
+          <p class="on">겨울왕국</p>
+          <p>주토피아</p>
+          <p>엘리멘탈</p>
+          <p>인사이드아웃</p>
+        </div>
+        <div class="char_wrap">
+          <div class="char_tab">
+            <img src="./images/character_tab01.png" alt="" class="tab">
+            <img src="./images/character_tab02.png" alt="">
+            <img src="./images/character_tab03.png" alt="">
+            <img src="./images/character_tab04.png" alt="">
+          </div>
+          <div class="card">
+            <img src="./images/character_img01.png" alt="">
+          </div>
+          <div class="char_txt">
+            <h3>엘사</h3>
+            <p class="c_p01">"이젠 두렵지 않아"</p>
+            <p>더 성숙된 모습으로 마법을 다루며 왕국을 아낀다. 귓속에서 들리는 부름에 미지의 세계로, 두렵지만 마법의 숲과 아렌델의 비밀을 밝히기 위해 용감히 떠난다. 엘사는 정령과 인간을 이어주는 다섯번째 정령이었다.</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- 3. 영화 추천 -->
+    <section id="movie">
+      <article class="movie_wrap">
+        <h2>DISNEY MOVIE</h2>
+        <p>인기있는 디즈니 애니메이션을 추천해드립니다.<br>
+          보고 또 보고싶은 <span>디즈니에서 힐링과 감동을 동시</span>에 얻어보세요.<br>
+          동심의 세계로 출발!</p>
+
+        <div class="swiper_con">
+          <div class="swiper_m">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <img src="./images/movie01.jpg" alt="">
+              </li>
+              <li class="swiper-slide">
+                <img src="./images/movie02.jpg" alt="">
+              </li>
+              <li class="swiper-slide">
+                <img src="./images/movie03.jpg" alt="">
+              </li>
+              <li class="swiper-slide">
+                <img src="./images/movie04.jpg" alt="">
+              </li>
+            </ul>
+          </div>
+          <!-- 콘트롤 버튼 -->
+          <div class="swiper-pagination1"></div>
+          <!-- 좌, 우 버튼 -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- 4. 이벤트 -->
+    <section id="event">
+      <h2>EVENT</h2>
+      <div class="event_wrap1">
+        <article class="event_banner1">
+          <ul class="slide_event">
+            <li>
+              <a href="./images/event01.jpg" title="">
+                <img src="./images/event01.jpg" alt="이벤트1" class="e_img">
+              </a>
+            </li>
+            <li>
+              <a href="./images/event02.jpg" title="">
+                <img src="./images/event02.jpg" alt="이벤트2" class="e_img">
+              </a>
+            </li>
+            <li>
+              <a href="./images/event03.jpg" title="">
+                <img src="./images/event03.jpg" alt="이벤트3" class="e_img">
+              </a>
+            </li>
+            <li>
+              <a href="./images/event04.jpg" title="">
+                <img src="./images/event04.jpg" alt="이벤트4" class="e_img">
+              </a>
+            </li>
+          </ul>
+          <ul class="e_btn">
+            <li><i class="fas fa-angle-left e_left"></i></li>
+            <li class="pagination_e"></li>
+            <li><i class="fas fa-angle-right e_right"></i></li>
+          </ul>
+        </article>
+
+        <article class="event_wrap2">
+          <div class="event_banner2">
+            <a href="#" title="">
+              <h3>혜택</h3>
+              <p class="e_p01">신규 회원가입<br>
+                디즈니샵 쿠폰 혜택</p>
+              <p class="e_p02">신규 가입하면 굿즈 20%<br>
+                할인쿠폰이 펑펑</p>
+              <img src="./images/event05.png" alt="">
+            </a>
+          </div>
+          <div class="event_banner2">
+            <a href="#" title="">
+              <h3>혜택</h3>
+              <p class="e_p01">디즈니 영화<br>
+                추천받기</p>
+              <p>오늘 어떤 영화를 볼지<br>
+                고민이라면?</p>
+              <img src="./images/event06.png" alt="">
+            </a>
+          </div>
+        </article>
+      </div>
+
+    </section>
+
+
+    <!-- 5. 리뷰 -->
+    <section id="review">
+      <h2>리뷰</h2>
+    </section>
+
+  </main>
+
+  <!-- 푸터영역 시작 -->
+  <footer>
+    <div class="f_inner">
+      <h2>
+        <a href="index.html" title="하단로고">
+          <img src="./images/disney_logo_w.png" alt="하단로고">
+        </a>
+      </h2>
+    </div>
+
+    <nav class="f_lnb">
+      <ul>
+        <li><a href="#" title="이용약관">회사소개</a></li>
+        <li><a href="#" title="개인정보 처리방침">채용</a></li>
+        <li><a href="#" title="저작권안내">이용약관</a></li>
+        <li><a href="#" title="공동인증서 안내">개인정보 처리방침</a></li>
+      </ul>
+    </nav>
+    <address>
+      <dl>
+        <dt>사업자등록번호 : </dt>
+        <dd>220-81-03347</dd>
+        <dt>대표자 : </dt>
+        <dd>김소연</dd>
+        <dt>연락처 : </dt>
+        <dd>080-822-1416</dd>
+        <dt>주소 : </dt>
+        <dd>서울특별시 강남구 테헤란로 
+          152 7층</dd>
+        <dt>통신판매업 신고번호 : </dt>
+        <dd>제2021-05456호</dd>
+      </dl>
+      <p>&copy;2022 Disney and its related entities. All Rights Reserved.</p>
+    </address>
+  </footer>
+  
+  <!-- 스와이퍼 슬라이드 스크립트 -->
+  <script src="./script/swiper.js"></script>
+  <script>
+    var swiper = new Swiper(".swiper_m", {
+      autoplay:{
+        delay:2500,
+        disableOnInteration: false,
+      },
+      //loop: true, //무한반복
+      navigation:{ //좌, 우 방향버튼 나오게 (클릭기능)
+        nextEl:".swiper_con .swiper-button-next",
+        prevEl:".swiper_con .swiper-button-prev",
+      },
+      pagination:{
+        el:".swiper_con .swiper-pagination1",
+        clickable: true, //콘트롤 버튼 클릭기능
+      }
+    });
+  </script>
+</body>
+</html>
